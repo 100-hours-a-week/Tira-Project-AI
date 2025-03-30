@@ -56,14 +56,14 @@ Python	3.7
 
 ## 실험 결과
 ### Shared Encoder 기반 MoE vs 일반 모델
-도메인	구성	Val Acc (%)	Test Acc (%)
-fruit & veg	Only Encoder	96.01	97.40
-fruit & veg	Gate1 + Expert	96.58	98.27
-vegetable	Only Encoder	99.10	99.03
-vegetable	Gate1 + Expert	99.90	99.86
-orange disease	Only Encoder	93.94	97.28
-orange disease	Gate1 + Expert	96.97	99.19
-→ Gate1을 통해 라우팅된 Expert를 사용할 경우 성능 향상이 일관적으로 나타남.
+| 도메인         | 구성              | Val Acc (%) | Test Acc (%) |
+|----------------|-------------------|--------------|---------------|
+| fruit & veg    | Only Encoder      | 96.01        | 97.40         |
+| fruit & veg    | Gate1 + Expert    | 96.58        | 98.27         |
+| vegetable      | Only Encoder      | 99.10        | 99.03         |
+| vegetable      | Gate1 + Expert    | 99.90        | 99.86         |
+| orange disease | Only Encoder      | 93.94        | 97.28         |
+| orange disease | Gate1 + Expert    | 96.97        | 99.19         |
 
 ### Gate1 성능 (도메인 분류 정확도)
 - Disease / Non-disease 구분 이진 분류에서 초기 학습부터 99% 이상의 정확도 달성
