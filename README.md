@@ -75,7 +75,7 @@ Python	3.7
 - Gate1이 성능을 잘 내고 있지만, 단순한 시각적 차이에 의존했을 가능성이 있어 feature 기반의 일반화 표현 학습 여부를 시각화 기법으로 분석할 예정
 
 ### 참고자료
-Switch Transformer (Fedus et al., 2021)
-Sparse MoE Layer (Shazeer et al., 2017)
-Adaptive Mixtures of Local Experts (Hinton et al., 1991)
-Parameter-Efficient MoE (Gao et al., 2022)
+- Switch Transformer (Fedus et al., 2021)
+- Sparse MoE Layer (Shazeer et al., 2017)
+- Adaptive Mixtures of Local Experts (Hinton et al., 1991)
+- Parameter-Efficient MoE (Gao et al., 2022)
