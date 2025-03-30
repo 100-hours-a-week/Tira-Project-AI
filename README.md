@@ -47,12 +47,13 @@ Masked Mixture of Experts (Masked-MoE)
 - 파라미터 효율 및 학습 안정성 향상
 
 ## 실험 환경
-항목	내용
-환경	Google Colab Pro
-GPU	A100, 80GB
-OS	Linux
-Python	3.7
-로그 저장	MongoDB Atlas (PyMongo 활용)
+| 항목       | 내용                          |
+|------------|-------------------------------|
+| 환경       | Google Colab Pro              |
+| GPU        | A100, 80GB                    |
+| OS         | Linux                         |
+| Python     | 3.7                           |
+| 로그 저장  | MongoDB Atlas (PyMongo 활용)  |
 
 ## 실험 결과
 ### Shared Encoder 기반 MoE vs 일반 모델
