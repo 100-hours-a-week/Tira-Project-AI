@@ -8,17 +8,20 @@ Masked Mixture of Experts (Masked-MoE)
 특히, 각 입력 이미지가 어떤 도메인에 속하는지를 판별하고, 그 결과를 바탕으로 해당 도메인에 적합한 전문가(Expert) 네트워크만을 활성화하는 방식으로 효율을 극대화하고자 하였다.
 
 ## 데이터셋 개요
-도메인 구분	데이터셋	클래스 수	이미지 수 (샘플링 전 → 후)	사용 모델
-non-disease	fruit & vegetable	36	3,466 → 1,296	Pretrained ResNet
-non-disease	vegetable	15	18,000 → 1,200	Pretrained EfficientNet
-non-disease	flower	5	3,670 → 1,250	Basic MLP
-non-disease	pistachio	2	2,148 → 1,200	Basic MLP
-non-disease	rice	5	75,000 → 1,250	Basic MLP
-non-disease	almond	4	1,556 → 1,200	Basic MLP
-disease	rice disease	3	4,684 → 1,200	Basic MLP
-disease	tomato disease	11	32,535 → 1,210	Pretrained EfficientNet
-disease	orange disease	4	1,090 → 1,090	Basic MLP
-→ 총 9개 도메인, 약 14만 장의 이미지에서 10,896장으로 언더샘플링하여 실험 진행.
+| 도메인 구분 | 데이터셋         | 클래스 수 | 이미지 수 (샘플링 전 → 후) | 사용 모델            |
+|-------------|------------------|------------|-----------------------------|-----------------------|
+| non-disease | fruit & vegetable | 36         | 3,466 → 1,296               | Pretrained ResNet     |
+| non-disease | vegetable         | 15         | 18,000 → 1,200              | Pretrained EfficientNet |
+| non-disease | flower            | 5          | 3,670 → 1,250               | Basic MLP             |
+| non-disease | pistachio         | 2          | 2,148 → 1,200               | Basic MLP             |
+| non-disease | rice              | 5          | 75,000 → 1,250              | Basic MLP             |
+| non-disease | almond            | 4          | 1,556 → 1,200               | Basic MLP             |
+| disease     | rice disease      | 3          | 4,684 → 1,200               | Basic MLP             |
+| disease     | tomato disease    | 11         | 32,535 → 1,210              | Pretrained EfficientNet |
+| disease     | orange disease    | 4          | 1,090 → 1,090               | Basic MLP             |
+
+> 총 9개 도메인, 약 14만 장의 이미지에서 언더샘플링하여 실험 진행
+
 
 ## 목표
 - 이미지가 속한 도메인 분류 (disease / non-disease)
